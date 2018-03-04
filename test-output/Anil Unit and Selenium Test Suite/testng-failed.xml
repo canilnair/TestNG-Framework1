@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Anil Unit and Selenium Test Suite]" parallel="classes">
+  <listeners>
+    <listener class-name="supportlibrary.MyTestListners"/>
+  </listeners>
+  <test name="Unit Test(failed)" parallel="classes">
+    <parameter name="Reg" value="Regression Test"/>
+    <parameter name="Smoke" value="Smoke Test"/>
+    <classes>
+      <class name="testclasses.SampleTest">
+        <methods>
+          <include name="testMethod1"/>
+          <include name="testMethod2"/>
+          <include name="testmethod4"/>
+        </methods>
+      </class> <!-- testclasses.SampleTest -->
+    </classes>
+  </test> <!-- Unit Test(failed) -->
+  <test name="Selenium Test 1(failed)" parallel="classes">
+    <classes>
+      <class name="testclasses.SeleniumTest1">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="selenium_testmethod1"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testclasses.SeleniumTest1 -->
+    </classes>
+  </test> <!-- Selenium Test 1(failed) -->
+</suite> <!-- Failed suite [Anil Unit and Selenium Test Suite] -->

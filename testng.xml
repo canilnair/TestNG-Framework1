@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Anil Unit and Selenium Test Suite" thread-count="2" parallel="classes">
+
+<listeners>
+	<listener class-name="supportlibrary.MyTestListners"/>
+</listeners>
+  
+  <test name="Unit Test">
+  <parameter name="Smoke" value="Smoke Test"></parameter>
+  <parameter name="Reg" value="Regression Test"></parameter>
+    <classes>
+      <class name="testclasses.SampleTest"/>
+    </classes>
+  </test>
+  
+  <test name="Selenium Test 1">
+  	<classes>
+  		<class name="testclasses.SeleniumTest1"/>
+  	</classes>
+  </test>
+  
+  <test name="Selenium Test 2">
+  	<classes>
+  		<class name="testclasses.SeleniumTest2"/>
+  	</classes>
+  </test>  
+</suite> <!-- Suite -->

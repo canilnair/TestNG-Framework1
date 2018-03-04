@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="supportlibrary.MyTestListners"/>
+  </listeners>
+  <test name="Main Functional Test(failed)">
+    <parameter name="Reg" value="Regression Test"/>
+    <parameter name="Smoke" value="Smoke Test"/>
+    <classes>
+      <class name="testclasses.SampleTest">
+        <methods>
+          <include name="selenium_testmethod6"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testclasses.SampleTest -->
+    </classes>
+  </test> <!-- Main Functional Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
